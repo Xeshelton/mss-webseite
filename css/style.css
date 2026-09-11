@@ -228,6 +228,28 @@ nav.main-nav a.active {
   color: var(--orange);
 }
 
+.info-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  border: 1px solid #e0e0e0;
+  padding: 28px 32px;
+  max-width: 640px;
+  margin: 28px auto 0;
+  text-align: center;
+  color: var(--text-muted);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.info-card p {
+  margin: 0;
+}
+
+.info-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--orange);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+}
+
 /* Kontakt */
 
 .contact-panel {
