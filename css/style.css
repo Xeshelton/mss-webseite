@@ -113,13 +113,35 @@ nav.main-nav a.active {
   text-align: center;
 }
 
-.hero h1 {
-  font-size: 2.4rem;
-  margin: 0 0 16px;
+.hero-eyebrow {
+  margin: 0 0 6px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  color: #a8a8a8;
 }
 
-.hero h1 .accent {
+.hero-logo {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.hero-logo-line {
+  display: block;
+  font-size: 2.3rem;
+}
+
+.hero-logo .accent {
   color: var(--orange);
+}
+
+.hero-logo-underline {
+  width: 90px;
+  height: 4px;
+  background: var(--white);
+  margin: 18px auto 26px;
+  border-radius: 2px;
 }
 
 .hero p {
@@ -191,6 +213,14 @@ nav.main-nav a.active {
   background: var(--bg);
   box-shadow: none;
   border: 1px solid #e0e0e0;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.section-alt .card:hover {
+  transform: translateY(-6px);
+  border-color: var(--orange);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  background: var(--card-bg);
 }
 
 .card h3 {
@@ -200,32 +230,60 @@ nav.main-nav a.active {
 
 /* Kontakt */
 
-.contact-block {
+.contact-panel {
+  max-width: 480px;
+  margin: 36px auto 0;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  border: 1px solid #e2e2e2;
+  border-top: 4px solid var(--orange);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  padding: 8px 32px;
+}
+
+.contact-row {
   display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 20px 0;
+}
+
+.contact-row + .contact-row {
+  border-top: 1px solid #ececec;
+}
+
+.contact-icon {
+  font-size: 1.4rem;
+  line-height: 1;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  text-align: left;
+  background: var(--bg);
+  border-radius: 50%;
 }
 
-.contact-block .card {
-  min-width: 260px;
-}
-
-.contact-block dt {
+.contact-row dt {
   font-weight: 700;
   color: var(--text-muted);
-  font-size: 0.85rem;
+  font-size: 0.78rem;
   text-transform: uppercase;
-  margin-top: 14px;
+  letter-spacing: 0.4px;
+  margin: 0 0 2px;
 }
 
-.contact-block dt:first-child {
-  margin-top: 0;
+.contact-row dd {
+  margin: 0;
 }
 
-.contact-block dd {
-  margin: 2px 0 0;
+.contact-row dd a {
+  color: var(--text);
+}
+
+.contact-row dd a:hover {
+  color: var(--orange);
 }
 
 /* Footer */
