@@ -238,14 +238,21 @@ nav.main-nav a.active {
   border: 1px solid #e2e2e2;
   border-top: 4px solid var(--orange);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-  padding: 8px 32px;
+  padding: 8px 0;
+  overflow: hidden;
 }
 
 .contact-row {
   display: flex;
   align-items: flex-start;
   gap: 18px;
-  padding: 20px 0;
+  padding: 20px 32px;
+  transition: background 0.18s ease, transform 0.18s ease;
+}
+
+.contact-row:hover {
+  background: #fff3ea;
+  transform: translateX(4px);
 }
 
 .contact-row + .contact-row {
@@ -263,6 +270,11 @@ nav.main-nav a.active {
   justify-content: center;
   background: var(--bg);
   border-radius: 50%;
+  transition: background 0.18s ease;
+}
+
+.contact-row:hover .contact-icon {
+  background: #ffe1cc;
 }
 
 .contact-row dt {
