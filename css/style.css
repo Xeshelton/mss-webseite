@@ -53,8 +53,7 @@ a {
 .site-header .container {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 56px;
+  justify-content: space-between;
   padding-top: 14px;
   padding-bottom: 14px;
 }
@@ -103,8 +102,7 @@ nav.main-nav a::before {
   transition: width 0.3s ease;
 }
 
-nav.main-nav a:hover::before,
-nav.main-nav a.active::before {
+nav.main-nav a:hover::before {
   width: 100%;
 }
 
@@ -390,10 +388,6 @@ nav.main-nav a.active::before {
 /* Mobile */
 
 @media (max-width: 720px) {
-  .site-header .container {
-    justify-content: space-between;
-  }
-
   nav.main-nav {
     display: none;
     position: absolute;
