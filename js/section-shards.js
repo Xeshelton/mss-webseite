@@ -97,5 +97,5 @@ function initShards(canvasId, sectionId, color, density, speed) {
   else draw();
 }
 
-initShards("shardCanvasUeberUns", "ueber-uns", [193, 68, 14], 55, 5);
-initShards("shardCanvasProjekte", "projekte", [193, 68, 14], 55, 5);
+initShards("shardCanvasUeberUns", "ueber-uns", [193, 68, 14], 55, 1.6);
+initShards("shardCanvasProjekte", "projekte", [193, 68, 14], 55, 1.6);
