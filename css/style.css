@@ -348,6 +348,11 @@ nav.main-nav a:hover::before {
   transition: background 0.18s ease, transform 0.18s ease;
 }
 
+.contact-row > div {
+  flex: 1;
+  min-width: 0;
+}
+
 .contact-row:hover {
   background: #fff3ea;
   transform: translateX(4px);
@@ -399,6 +404,18 @@ nav.main-nav a:hover::before {
 
 .contact-row dd a:hover {
   color: var(--orange);
+}
+
+.dd-with-copy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.dd-placeholder {
+  color: var(--text-muted);
+  font-style: italic;
 }
 
 .copy-btn {
