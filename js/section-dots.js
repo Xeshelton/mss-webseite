@@ -60,7 +60,7 @@ function initDotNetwork(canvasId, sectionId, dotColor, lineColor) {
   }
 
   function step(p) {
-    p.angle += 0.003 * p.speed;
+    p.angle += 0.007 * p.speed;
     const wobble = Math.sin(time * 0.8 + p.phase) * 0.15 + 1;
     p.x = p.homeX + Math.cos(p.angle) * p.radius * wobble;
     p.y = p.homeY + Math.sin(p.angle) * p.radius * wobble;

@@ -28,7 +28,9 @@
     </div>
   </header>
 
-  <main class="legal-page">
+  <div class="page-fx" id="legalbg">
+    <canvas id="dotsLegal" class="section-canvas" aria-hidden="true"></canvas>
+    <main class="legal-page">
     <h1>Impressum</h1>
 
     <h2>Angaben gemäß § 5 TMG</h2>
@@ -68,7 +70,8 @@
       Support sowie im Vertrieb in den genannten Bereichen, Technologieberatung in den genannten Bereichen.
     </p>
 
-  </main>
+    </main>
+  </div>
 
   <footer class="site-footer">
     <div class="container">
@@ -81,5 +84,7 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/section-dots.js"></script>
+  <script>initDotNetwork("dotsLegal", "legalbg", "rgba(193,68,14,0.7)", "rgba(193,68,14,0.7)");</script>
 </body>
 </html>

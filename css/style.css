@@ -516,7 +516,15 @@ nav.main-nav a:hover::before {
 
 /* Simple pages (Impressum / Datenschutz) */
 
+.page-fx {
+  position: relative;
+  overflow: hidden;
+  min-height: 60vh;
+}
+
 .legal-page {
+  position: relative;
+  z-index: 2;
   background: var(--card-bg);
   max-width: 760px;
   margin: 50px auto;
