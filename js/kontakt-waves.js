@@ -1,14 +1,14 @@
-// Hero-Hintergrund: geblurrte, fliessende "Noise Waves" in Orange-Toenen.
-// Reines Canvas 2D / Vanilla-JS, eigene Noise-Funktion statt einer externen Bibliothek.
+// Duenne, geblurrte Noise-Wellen im Hintergrund des Kontakt-Bereichs.
+// Gleiche Technik wie im Hero (js/hero-noise-waves.js), nur duenner/dezenter
+// und in dunkleren Rosttoenen fuer den hellen Hintergrund.
 (function () {
-  const canvas = document.getElementById("heroNoiseCanvas");
+  const canvas = document.getElementById("kontaktWaves");
   if (!canvas) return;
-  const hero = canvas.closest(".hero");
+  const section = canvas.closest(".section");
   const ctx = canvas.getContext("2d");
   const dpr = Math.min(window.devicePixelRatio || 1, 2);
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  // Einfache, selbstgeschriebene 1D-Value-Noise-Funktion.
   function createNoise1D() {
     const perm = new Float32Array(512);
     for (let i = 0; i < 256; i++) perm[i] = Math.random();
@@ -26,26 +26,22 @@
     };
   }
 
-  // Drei klar unterscheidbare Toene (hell/mittel/dunkel).
-  const COLORS = ["#ffb066", "#f37021", "#c1440e"];
-  const CENTERS = [0.22, 0.5, 0.78]; // ueber die ganze Hoehe verteilt
+  const COLORS = ["#c1440e", "#f37021", "#8a3208"];
+  const CENTERS = [0.3, 0.55, 0.78];
   const noiseFns = COLORS.map(() => createNoise1D());
-  const BACKGROUND = "#262626";
-  const WAVE_OPACITY = 0.22;
-  const WAVE_WIDTH = 60;
-  const BLUR = 24;
+  const WAVE_OPACITY = 0.28;
+  const WAVE_WIDTH = 2.5;
+  const BLUR = 10;
   const SPEED = 0.0018;
-  // Canvas groesser als der sichtbare Bereich zeichnen, damit die Unschaerfe
-  // am Rand des Canvas ausserhalb des sichtbaren Ausschnitts landet.
-  const BLEED = 90;
+  const BLEED = 60;
 
   let w = 0;
   let h = 0;
   let t = 0;
 
   function resize() {
-    w = hero.clientWidth + BLEED * 2;
-    h = hero.clientHeight + BLEED * 2;
+    w = section.clientWidth + BLEED * 2;
+    h = section.clientHeight + BLEED * 2;
     canvas.width = w * dpr;
     canvas.height = h * dpr;
     canvas.style.width = w + "px";
@@ -57,17 +53,13 @@
   }
 
   function drawWaves() {
-    ctx.globalAlpha = 1;
-    ctx.fillStyle = BACKGROUND;
-    ctx.globalAlpha = WAVE_OPACITY;
-    ctx.fillRect(0, 0, w, h);
-
+    ctx.clearRect(0, 0, w, h);
     t += SPEED;
     for (let i = 0; i < COLORS.length; i++) {
       ctx.beginPath();
       ctx.lineWidth = WAVE_WIDTH;
       ctx.strokeStyle = COLORS[i];
-      ctx.globalAlpha = 0.55;
+      ctx.globalAlpha = WAVE_OPACITY;
       for (let x = 0; x <= w; x += 6) {
         const y = noiseFns[i](x / 800 + t) * (h * 0.14) + h * CENTERS[i];
         ctx.lineTo(x, y);
