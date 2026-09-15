@@ -30,7 +30,7 @@
   const COLORS = ["#ffb066", "#f37021", "#c1440e"];
   const CENTERS = [0.22, 0.5, 0.78]; // ueber die ganze Hoehe verteilt
   const noiseFns = COLORS.map(() => createNoise1D());
-  const BACKGROUND = "#262626";
+  const BACKGROUND = "#333333";
   const WAVE_OPACITY = 0.22;
   const WAVE_WIDTH = 60;
   const BLUR = 24;

@@ -4,7 +4,7 @@
   --bg: #ececec;
   --card-bg: #ffffff;
   --dark: #1c1c1c;
-  --dark-2: #262626;
+  --dark-2: #333333;
   --orange: #f37021;
   --text: #262626;
   --text-muted: #5c5c5c;
@@ -144,7 +144,7 @@ nav.main-nav a:hover::before {
   inset: 0;
   z-index: 1;
   pointer-events: none;
-  background: radial-gradient(ellipse 60% 70% at 50% 45%, rgba(15, 12, 10, 0.6) 0%, rgba(15, 12, 10, 0.22) 55%, rgba(15, 12, 10, 0) 78%);
+  background: radial-gradient(ellipse 60% 70% at 50% 45%, rgba(15, 12, 10, 0.4) 0%, rgba(15, 12, 10, 0.12) 55%, rgba(15, 12, 10, 0) 78%);
 }
 
 .hero .container {
