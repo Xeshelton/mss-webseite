@@ -304,16 +304,6 @@ nav.main-nav a:hover::before {
   object-fit: cover;
 }
 
-.card-image svg {
-  width: 32px;
-  height: 32px;
-}
-
-.card-image span {
-  font-size: 0.78rem;
-  letter-spacing: 0.3px;
-}
-
 .info-card {
   background: var(--card-bg);
   border-radius: var(--radius);
