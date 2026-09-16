@@ -12,10 +12,15 @@
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="container">
-      <a href="index.html" class="logo">
-        <span class="logo-text"><span class="accent">m</span><span class="accent">s</span><span class="accent">s</span></span>
+  <div class="app-shell">
+    <aside class="site-sidebar">
+      <a href="index.html" class="sidebar-logo">
+        <span class="sidebar-logo-stack">
+          <span class="sidebar-logo-line">m</span>
+          <span class="sidebar-logo-line">s</span>
+          <span class="sidebar-logo-line">s</span>
+        </span>
+        <span class="sidebar-logo-underline"></span>
       </a>
       <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">&#9776;</button>
       <nav class="main-nav">
@@ -26,14 +31,12 @@
           <li><a href="#kontakt" data-text="Kontakt">Kontakt</a></li>
         </ul>
       </nav>
-    </div>
-  </header>
+    </aside>
+
+    <div class="page-content">
 
   <section id="home" class="hero">
-    <canvas id="heroNoiseCanvas" class="hero-noise-canvas" aria-hidden="true"></canvas>
-    <div class="hero-vignette"></div>
     <div class="container">
-      <p class="hero-eyebrow">Willkommen bei</p>
       <h1 class="hero-logo">
         <span class="hero-logo-line"><span class="accent">m</span>arvelous</span>
         <span class="hero-logo-line"><span class="accent">s</span>oftware</span>
@@ -64,27 +67,27 @@
       <div class="underline"></div>
       <p class="subtitle" style="margin-top:20px;">Eine Auswahl unserer Arbeit — folgt in Kürze.</p>
       <div class="cards">
-        <div class="card">
+        <a class="card" href="projekt-a.html">
           <div class="card-image">
             <img src="assets/projekte/project-a.svg" alt="" />
           </div>
           <h3>Projekt A</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
-        </div>
-        <div class="card">
+        </a>
+        <a class="card" href="projekt-b.html">
           <div class="card-image">
             <img src="assets/projekte/project-b.svg" alt="" />
           </div>
           <h3>Projekt B</h3>
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-        </div>
-        <div class="card">
+        </a>
+        <a class="card" href="projekt-c.html">
           <div class="card-image">
             <img src="assets/projekte/project-c.svg" alt="" />
           </div>
           <h3>Projekt C</h3>
           <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        </div>
+        </a>
       </div>
     </div>
   </section>
@@ -196,8 +199,10 @@
     </div>
   </footer>
 
+    </div>
+  </div>
+
   <script src="js/main.js"></script>
-  <script src="js/hero-noise-waves.js"></script>
   <script src="js/kontakt-waves.js"></script>
 </body>
 </html>

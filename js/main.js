@@ -44,3 +44,63 @@ document.querySelectorAll(".copy-btn").forEach((btn) => {
     btn._copyTimeout = setTimeout(() => btn.classList.remove("copied"), 1500);
   });
 });
+
+// Streckt jede Logo-Zeile per Letter-Spacing auf die Breite der laengsten
+// Zeile, damit "marvelous / software / solutions" wie im Referenzbild
+// buendig gleich lang enden.
+function equalizeHeroLogo() {
+  const lines = document.querySelectorAll(".hero-logo-line");
+  const underline = document.querySelector(".hero-logo-underline");
+  if (!lines.length) return;
+
+  lines.forEach((line) => {
+    line.style.letterSpacing = "normal";
+  });
+
+  let maxWidth = 0;
+  lines.forEach((line) => {
+    maxWidth = Math.max(maxWidth, line.getBoundingClientRect().width);
+  });
+
+  lines.forEach((line) => {
+    const width = line.getBoundingClientRect().width;
+    const charCount = line.textContent.trim().length;
+    const diff = maxWidth - width;
+    if (diff > 0.5 && charCount > 1) {
+      line.style.letterSpacing = diff / charCount + "px";
+    }
+  });
+
+  if (underline) {
+    underline.style.width = maxWidth + "px";
+  }
+}
+
+// Zieht die Unterstriche unter "Ueber uns" / "Projekte" / "Kontakt" auf
+// exakt die Breite der Ueberschrift.
+function equalizeSectionUnderlines() {
+  document.querySelectorAll(".section h2").forEach((heading) => {
+    const underline = heading.nextElementSibling;
+    if (underline && underline.classList.contains("underline")) {
+      underline.style.width = heading.getBoundingClientRect().width + "px";
+    }
+  });
+}
+
+function refreshLayoutWidths() {
+  equalizeHeroLogo();
+  equalizeSectionUnderlines();
+}
+
+if (document.fonts && document.fonts.ready) {
+  document.fonts.ready.then(refreshLayoutWidths);
+} else {
+  refreshLayoutWidths();
+}
+window.addEventListener("load", refreshLayoutWidths);
+
+let resizeTimer;
+window.addEventListener("resize", () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(refreshLayoutWidths, 150);
+});
