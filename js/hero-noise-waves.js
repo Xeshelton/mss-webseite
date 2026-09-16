@@ -28,7 +28,7 @@
 
   // Drei klar unterscheidbare Toene (hell/mittel/dunkel).
   const COLORS = ["#ffb066", "#f37021", "#c1440e"];
-  const CENTERS = [0.22, 0.5, 0.78]; // ueber die ganze Hoehe verteilt
+  const CENTERS = [0.3, 0.55, 0.8]; // ueber die ganze Hoehe verteilt, oberste Welle etwas weiter unten
   const noiseFns = COLORS.map(() => createNoise1D());
   const BACKGROUND = "#262626";
   const WAVE_OPACITY = 0.22;
