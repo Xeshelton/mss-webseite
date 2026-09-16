@@ -30,8 +30,8 @@
   const CENTERS = [0.3, 0.55, 0.78];
   const noiseFns = COLORS.map(() => createNoise1D());
   const WAVE_OPACITY = 0.28;
-  const WAVE_WIDTH = 16;
-  const BLUR = 10;
+  const WAVE_WIDTH = 45;
+  const BLUR = 12;
   const SPEED = 0.0018;
   const BLEED = 60;
 
