@@ -6,7 +6,7 @@
   <title>Projekt B — Marvelous Software Solutions</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -24,12 +24,16 @@
       <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">&#9776;</button>
       <nav class="main-nav">
         <ul>
-          <li><a href="index.html#home" data-text="Home">Home</a></li>
-          <li><a href="index.html#ueber-uns" data-text="Über uns">Über uns</a></li>
-          <li><a href="index.html#projekte" data-text="Projekte">Projekte</a></li>
-          <li><a href="index.html#kontakt" data-text="Kontakt">Kontakt</a></li>
+          <li><a href="index.html#home" data-text="Home" data-i18n="nav.home">Home</a></li>
+          <li><a href="index.html#ueber-uns" data-text="Über uns" data-i18n="nav.ueberUns">Über uns</a></li>
+          <li><a href="index.html#projekte" data-text="Projekte" data-i18n="nav.projekte">Projekte</a></li>
+          <li><a href="index.html#kontakt" data-text="Kontakt" data-i18n="nav.kontakt">Kontakt</a></li>
         </ul>
       </nav>
+      <div class="lang-toggle">
+        <button type="button" data-lang="de">DE</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
     </aside>
 
     <div class="page-content">
@@ -57,8 +61,8 @@
     <div class="container">
       <span>&copy; <span id="year"></span> Marvelous Software Solutions</span>
       <ul class="footer-links">
-        <li><a href="impressum.html">Impressum</a></li>
-        <li><a href="datenschutz.html">Datenschutz</a></li>
+        <li><a href="impressum.html" data-i18n="footer.impressum">Impressum</a></li>
+        <li><a href="datenschutz.html" data-i18n="footer.datenschutz">Datenschutz</a></li>
       </ul>
     </div>
   </footer>
@@ -67,5 +71,6 @@
   </div>
 
   <script src="js/main.js"></script>
+  <script src="js/i18n.js"></script>
 </body>
 </html>

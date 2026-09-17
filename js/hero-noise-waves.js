@@ -1,5 +1,7 @@
-// Hero-Hintergrund: geblurrte, fliessende "Noise Waves" in Orange-Toenen.
-// Reines Canvas 2D / Vanilla-JS, eigene Noise-Funktion statt einer externen Bibliothek.
+// Hero-Hintergrund: geblurrte, fliessende "Noise Waves", angepasst an den
+// weissen Hintergrund. Reines Canvas 2D / Vanilla-JS, eigene Noise-Funktion
+// statt einer externen Bibliothek. Die Animation pausiert, sobald der Hero
+// nicht sichtbar ist (spart Rechenleistung / verhindert Ruckeln beim Scrollen).
 (function () {
   const canvas = document.getElementById("heroNoiseCanvas");
   if (!canvas) return;
@@ -26,14 +28,14 @@
     };
   }
 
-  // Drei klar unterscheidbare Toene (hell/mittel/dunkel).
-  const COLORS = ["#ffb066", "#f37021", "#c1440e"];
-  const CENTERS = [0.3, 0.55, 0.8]; // ueber die ganze Hoehe verteilt, oberste Welle etwas weiter unten
+  // Dunklere Rosttoene, damit die Wellen auf weissem Grund sichtbar bleiben.
+  const COLORS = ["#f37021", "#c1440e", "#8a3208"];
+  const CENTERS = [0.3, 0.55, 0.8];
   const noiseFns = COLORS.map(() => createNoise1D());
-  const BACKGROUND = "#262626";
-  const WAVE_OPACITY = 0.22;
-  const WAVE_WIDTH = 60;
-  const BLUR = 24;
+  const BACKGROUND = "#ffffff";
+  const WAVE_OPACITY = 0.05;
+  const WAVE_WIDTH = 55;
+  const BLUR = 22;
   const SPEED = 0.0018;
   // Canvas groesser als der sichtbare Bereich zeichnen, damit die Unschaerfe
   // am Rand des Canvas ausserhalb des sichtbaren Ausschnitts landet.
@@ -42,6 +44,8 @@
   let w = 0;
   let h = 0;
   let t = 0;
+  let visible = true;
+  let rafId = null;
 
   function resize() {
     w = hero.clientWidth + BLEED * 2;
@@ -67,7 +71,7 @@
       ctx.beginPath();
       ctx.lineWidth = WAVE_WIDTH;
       ctx.strokeStyle = COLORS[i];
-      ctx.globalAlpha = 0.55;
+      ctx.globalAlpha = 0.35;
       for (let x = 0; x <= w; x += 6) {
         const y = noiseFns[i](x / 800 + t) * (h * 0.14) + h * CENTERS[i];
         ctx.lineTo(x, y);
@@ -77,12 +81,33 @@
   }
 
   function loop() {
+    if (!visible) {
+      rafId = null;
+      return;
+    }
     drawWaves();
-    requestAnimationFrame(loop);
+    rafId = requestAnimationFrame(loop);
+  }
+
+  function startLoop() {
+    if (rafId === null) {
+      rafId = requestAnimationFrame(loop);
+    }
+  }
+
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        visible = entries[0].isIntersecting;
+        if (visible) startLoop();
+      },
+      { threshold: 0 }
+    );
+    observer.observe(hero);
   }
 
   window.addEventListener("resize", resize);
   resize();
-  if (!reduceMotion) requestAnimationFrame(loop);
+  if (!reduceMotion) startLoop();
   else drawWaves();
 })();

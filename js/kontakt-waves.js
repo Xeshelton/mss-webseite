@@ -38,6 +38,8 @@
   let w = 0;
   let h = 0;
   let t = 0;
+  let visible = true;
+  let rafId = null;
 
   function resize() {
     w = section.clientWidth + BLEED * 2;
@@ -69,12 +71,33 @@
   }
 
   function loop() {
+    if (!visible) {
+      rafId = null;
+      return;
+    }
     drawWaves();
-    requestAnimationFrame(loop);
+    rafId = requestAnimationFrame(loop);
+  }
+
+  function startLoop() {
+    if (rafId === null) {
+      rafId = requestAnimationFrame(loop);
+    }
+  }
+
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        visible = entries[0].isIntersecting;
+        if (visible) startLoop();
+      },
+      { threshold: 0 }
+    );
+    observer.observe(section);
   }
 
   window.addEventListener("resize", resize);
   resize();
-  if (!reduceMotion) requestAnimationFrame(loop);
+  if (!reduceMotion) startLoop();
   else drawWaves();
 })();

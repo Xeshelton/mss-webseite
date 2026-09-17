@@ -35,6 +35,15 @@ async function copyText(text) {
   }
 }
 
+const contactForm = document.getElementById("contactForm");
+if (contactForm) {
+  contactForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const note = document.getElementById("contactFormNote");
+    if (note) note.hidden = false;
+  });
+}
+
 document.querySelectorAll(".copy-btn").forEach((btn) => {
   btn.addEventListener("click", async () => {
     const ok = await copyText(btn.dataset.copy);

@@ -90,13 +90,14 @@ a {
   font-size: 2.3rem;
   font-weight: 700;
   color: var(--orange);
+  font-family: "Poppins", "Quicksand", "Segoe UI", Verdana, sans-serif;
 }
 
 .sidebar-logo-underline {
   width: 34px;
   height: 4px;
-  background: var(--white);
-  border-radius: 2px;
+  background: var(--text);
+  border-radius: 0;
 }
 
 nav.main-nav ul {
@@ -142,6 +143,30 @@ nav.main-nav a:hover::before {
   cursor: pointer;
 }
 
+.lang-toggle {
+  display: flex;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.lang-toggle button {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--white);
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.lang-toggle button.active {
+  background: var(--orange);
+  border-color: var(--orange);
+}
+
 /* Hero */
 
 .hero {
@@ -161,6 +186,7 @@ nav.main-nav a:hover::before {
   display: block;
 }
 
+.hero-noise-canvas,
 .section-noise-canvas {
   position: absolute;
   display: block;
@@ -191,6 +217,7 @@ nav.main-nav a:hover::before {
 
 @media (prefers-reduced-motion: reduce) {
   .hero-canvas,
+  .hero-noise-canvas,
   .section-canvas,
   .section-noise-canvas {
     display: none;
@@ -208,6 +235,7 @@ nav.main-nav a:hover::before {
   width: fit-content;
   margin: 0 auto;
   font-size: 5rem;
+  font-family: "Poppins", "Quicksand", "Segoe UI", Verdana, sans-serif;
 }
 
 .hero-logo .accent {
@@ -218,7 +246,7 @@ nav.main-nav a:hover::before {
   height: 4px;
   background: var(--text);
   margin: 22px auto 30px;
-  border-radius: 2px;
+  border-radius: 0;
 }
 
 .hero p {
@@ -271,7 +299,7 @@ nav.main-nav a:hover::before {
   height: 4px;
   background: var(--text);
   margin: 14px auto 0;
-  border-radius: 2px;
+  border-radius: 0;
 }
 
 .cards {
@@ -352,9 +380,19 @@ nav.main-nav a:hover::before {
 
 /* Kontakt */
 
+.kontakt-columns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 36px;
+}
+
 .contact-panel {
+  flex: 1 1 380px;
   max-width: 480px;
-  margin: 36px auto 0;
+  margin: 0;
   background: var(--card-bg);
   border-radius: var(--radius);
   border: 1px solid #e2e2e2;
@@ -362,6 +400,67 @@ nav.main-nav a:hover::before {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
   padding: 8px 0;
   overflow: hidden;
+}
+
+.contact-form {
+  flex: 1 1 380px;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  text-align: left;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  border: 1px solid #e2e2e2;
+  border-top: 4px solid var(--orange);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  padding: 28px 32px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-field label {
+  font-weight: 700;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: var(--text-muted);
+}
+
+.form-field input,
+.form-field textarea {
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--text);
+  background: var(--white);
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px 12px;
+  resize: vertical;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: var(--orange);
+}
+
+.contact-form .btn {
+  align-self: flex-start;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.form-note {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
 }
 
 .contact-row {
@@ -491,6 +590,7 @@ nav.main-nav a:hover::before {
   background: var(--dark);
   color: #cfcfcf;
   padding: 36px 0;
+  border-top: 3px solid var(--orange);
 }
 
 .site-footer .container {
@@ -631,6 +731,16 @@ nav.main-nav a:hover::before {
 
   .sidebar-logo-underline {
     display: none;
+  }
+
+  .lang-toggle {
+    margin-top: 0;
+    margin-right: 10px;
+    order: 2;
+  }
+
+  .nav-toggle {
+    order: 3;
   }
 
   nav.main-nav {
