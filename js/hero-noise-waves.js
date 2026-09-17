@@ -29,7 +29,10 @@
   }
 
   // Dunklere Rosttoene, damit die Wellen auf weissem Grund sichtbar bleiben.
-  const COLORS = ["#f37021", "#c1440e", "#8a3208"];
+  // Die oberste Welle bewusst NICHT im Akzent-Orange (#f37021), da diese
+  // Farbe exakt der Akzentbuchstaben (m/s) im Logo entspricht und die Welle
+  // die Buchstaben sonst beim Ueberlappen unsichtbar macht.
+  const COLORS = ["#7a2d0a", "#c1440e", "#8a3208"];
   const CENTERS = [0.3, 0.55, 0.8];
   const noiseFns = COLORS.map(() => createNoise1D());
   const BACKGROUND = "#ffffff";
