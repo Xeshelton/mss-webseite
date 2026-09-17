@@ -81,21 +81,16 @@ function equalizeHeroLogo() {
     }
   });
 
-  // Trotz gleicher Boxbreite kann der sichtbare Text durch den
-  // Buchstabenabstand nach dem letzten Zeichen optisch unterschiedlich weit
-  // vor dem rechten Rand enden. Rechte Kanten direkt nachmessen und die
-  // Zeilen exakt aneinander ausrichten, statt sich auf die Boxbreite zu verlassen.
-  let targetRight = -Infinity;
-  const rights = [];
+  // Die Kastenbreiten sind jetzt zwar rechnerisch gleich, aber je nach
+  // Endbuchstabe (z. B. das runde "e" bei "software") wirkt eine Zeile durch
+  // die Glyphenform trotzdem nicht ganz buendig mit den anderen, die auf "s"
+  // enden. Manuelle Fein-Korrektur fuer den optischen Ausgleich.
+  const MANUAL_NUDGE = { software: 10, solutions: 4 };
   lines.forEach((line) => {
-    const right = line.getBoundingClientRect().right;
-    rights.push(right);
-    targetRight = Math.max(targetRight, right);
-  });
-  lines.forEach((line, i) => {
-    const shift = targetRight - rights[i];
-    if (Math.abs(shift) > 0.5) {
-      line.style.transform = `translateX(${shift}px)`;
+    const key = line.textContent.trim().toLowerCase();
+    const nudge = MANUAL_NUDGE[key];
+    if (nudge) {
+      line.style.transform = `translateX(${nudge}px)`;
     }
   });
 
