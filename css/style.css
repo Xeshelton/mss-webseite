@@ -250,7 +250,7 @@ nav.main-nav a:hover::before {
 }
 
 .hero p {
-  color: var(--text-muted);
+  color: var(--text);
   max-width: 620px;
   margin: 0 auto 30px;
   font-size: 1.25rem;
