@@ -64,6 +64,7 @@ function equalizeHeroLogo() {
 
   lines.forEach((line) => {
     line.style.letterSpacing = "normal";
+    line.style.transform = "";
   });
 
   let maxWidth = 0;
@@ -77,6 +78,24 @@ function equalizeHeroLogo() {
     const diff = maxWidth - width;
     if (diff > 0.5 && charCount > 1) {
       line.style.letterSpacing = diff / charCount + "px";
+    }
+  });
+
+  // Trotz gleicher Boxbreite kann der sichtbare Text durch den
+  // Buchstabenabstand nach dem letzten Zeichen optisch unterschiedlich weit
+  // vor dem rechten Rand enden. Rechte Kanten direkt nachmessen und die
+  // Zeilen exakt aneinander ausrichten, statt sich auf die Boxbreite zu verlassen.
+  let targetRight = -Infinity;
+  const rights = [];
+  lines.forEach((line) => {
+    const right = line.getBoundingClientRect().right;
+    rights.push(right);
+    targetRight = Math.max(targetRight, right);
+  });
+  lines.forEach((line, i) => {
+    const shift = targetRight - rights[i];
+    if (Math.abs(shift) > 0.5) {
+      line.style.transform = `translateX(${shift}px)`;
     }
   });
 
