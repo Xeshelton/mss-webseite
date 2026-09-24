@@ -196,6 +196,26 @@ nav.main-nav a:hover::before {
   display: block;
 }
 
+/* Hero + "Ueber uns" teilen sich eine durchgehende Wellen-Flaeche */
+.wave-zone {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.wave-zone .hero {
+  background: transparent;
+}
+
+.wave-zone > .hero-noise-canvas {
+  z-index: 0;
+}
+
+.wave-zone > section {
+  position: relative;
+  z-index: 1;
+}
+
 .hero .container {
   position: relative;
   z-index: 2;

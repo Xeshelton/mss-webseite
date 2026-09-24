@@ -5,9 +5,10 @@
 (function () {
   const canvas = document.getElementById("heroNoiseCanvas");
   if (!canvas) return;
-  const hero = canvas.closest(".hero");
+  const zone = canvas.closest(".wave-zone");
+  const hero = zone.querySelector(".hero");
   const ctx = canvas.getContext("2d");
-  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  const dpr = 1; // stark geblurrt, hoehere Aufloesung bringt nichts
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   // Einfache, selbstgeschriebene 1D-Value-Noise-Funktion.
@@ -30,8 +31,9 @@
 
   // Dieselben duennen, dezenten Wellen wie im Kontakt-Bereich (js/kontakt-waves.js).
   // Oberste Welle bewusst nicht im Akzent-Orange (#f37021) der Logo-Buchstaben.
-  const COLORS = ["#c1440e", "#f37021", "#8a3208"];
-  const CENTERS = [0.3, 0.55, 0.78];
+  const COLORS = ["#c1440e", "#f37021", "#8a3208", "#f37021", "#c1440e", "#8a3208"];
+  // Anteile der Hero-Hoehe; Werte ueber 1 laufen in den "Ueber uns"-Bereich.
+  const CENTERS = [0.3, 0.55, 0.78, 1.02, 1.22, 1.42];
   const noiseFns = COLORS.map(() => createNoise1D());
   const WAVE_OPACITY = 0.28;
   const WAVE_WIDTH = 45;
@@ -48,8 +50,8 @@
   let rafId = null;
 
   function resize() {
-    w = hero.clientWidth + BLEED * 2;
-    h = hero.clientHeight + BLEED * 2;
+    w = zone.clientWidth + BLEED * 2;
+    h = zone.clientHeight + BLEED * 2;
     canvas.width = w * dpr;
     canvas.height = h * dpr;
     canvas.style.width = w + "px";
@@ -61,6 +63,7 @@
   }
 
   function drawWaves() {
+    const heroH = hero.clientHeight;
     ctx.clearRect(0, 0, w, h);
     t += SPEED;
     for (let i = 0; i < COLORS.length; i++) {
@@ -69,7 +72,7 @@
       ctx.strokeStyle = COLORS[i];
       ctx.globalAlpha = WAVE_OPACITY;
       for (let x = 0; x <= w; x += 6) {
-        const y = noiseFns[i](x / 800 + t) * (h * 0.14) + h * CENTERS[i];
+        const y = noiseFns[i](x / 800 + t) * heroH * 0.14 + BLEED + heroH * CENTERS[i];
         ctx.lineTo(x, y);
       }
       ctx.stroke();
@@ -99,9 +102,10 @@
       },
       { threshold: 0 }
     );
-    observer.observe(hero);
+    observer.observe(zone);
   }
 
+  if (window.ResizeObserver) new ResizeObserver(resize).observe(zone);
   window.addEventListener("resize", resize);
   resize();
   if (!reduceMotion) startLoop();

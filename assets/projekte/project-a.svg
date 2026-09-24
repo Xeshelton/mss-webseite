@@ -7,13 +7,13 @@
   <circle cx="56" cy="62" r="4" fill="#e0e0e0"/>
   <rect x="140" y="52" width="48" height="20" rx="10" fill="#f37021"/>
   <text x="164" y="66" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">12:00</text>
-  <path d="M60 244 Q60 184 112 184 Q164 184 164 244 Z" fill="#262626"/>
-  <circle cx="112" cy="132" r="38" fill="#f37021"/>
+  <path d="M62 250 Q62 190 112 190 Q162 190 162 250" fill="none" stroke="#262626" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="112" cy="132" r="38" fill="none" stroke="#262626" stroke-width="4"/>
   <circle cx="99" cy="126" r="4" fill="#262626"/>
   <circle cx="125" cy="126" r="4" fill="#262626"/>
   <path d="M97 145 Q112 158 127 145" fill="none" stroke="#262626" stroke-width="4" stroke-linecap="round"/>
-  <path d="M158 116 Q168 132 158 148" fill="none" stroke="#f37021" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
-  <path d="M168 108 Q184 132 168 156" fill="none" stroke="#f37021" stroke-width="3" stroke-linecap="round" opacity="0.3"/>
+  <path d="M164 116 Q174 132 164 148" fill="none" stroke="#f37021" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <path d="M174 108 Q190 132 174 156" fill="none" stroke="#f37021" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
 
   <!-- Pfeil zum Dashboard -->
   <circle cx="208" cy="150" r="13" fill="#f37021"/>

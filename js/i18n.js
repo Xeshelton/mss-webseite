@@ -39,13 +39,13 @@ const translations = {
     "projectA.summary":
       "Ein KI-Avatar führt das therapeutische Erstgespräch und prüft, wie es um das Wohlbefinden des Patienten steht.",
     "projectA.p1":
-      "Für das Zentrum Moyland und einen Therapeuten entwickeln wir einen KI-Avatar, der das therapeutische Erstgespräch führt. Im Gespräch werden zentrale Profilbereiche wie Stress oder Schlaf angesprochen, um das Wohlbefinden des Patienten einzuschätzen.",
+      "Für das Zentrum Moyland und einen Therapeuten entwickeln wir einen KI-Avatar, der das therapeutische Erstgespräch führt. Im Gespräch werden verschiedene Profilbereiche angesprochen, unter anderem Stress und Schlaf, aber auch weitere Bereiche, um das Wohlbefinden des Patienten einzuschätzen.",
     "projectA.p2":
       "Das Gespräch dauert 12 Minuten. Danach wird in einem Dashboard eine Analyse erstellt: Die Aussagen aus dem gesamten Gespräch werden zusammengefasst und visuell sowie grafisch dargestellt. Dazu kommt eine Auswertung des Verhaltens des Patienten über die Kamera.",
     "projectA.factsTitle": "Auf einen Blick",
     "projectA.factClient": "Auftraggeber: Zentrum Moyland und ein Therapeut",
     "projectA.factDuration": "Dauer des Gesprächs: 12 Minuten",
-    "projectA.factTopics": "Profilbereiche: z. B. Stress und Schlaf",
+    "projectA.factTopics": "Profilbereiche: unter anderem Stress und Schlaf sowie weitere",
     "projectA.factResult": "Ergebnis: Dashboard mit Zusammenfassung, Grafiken und Verhaltensauswertung per Kamera",
     "projectA.cta": "Zur Anwendung",
   },
@@ -86,13 +86,13 @@ const translations = {
     "projectA.summary":
       "An AI avatar conducts the initial therapeutic conversation and checks how the patient is doing.",
     "projectA.p1":
-      "For Zentrum Moyland and a therapist, we are developing an AI avatar that conducts the initial therapeutic conversation. It covers key profile areas such as stress or sleep to assess the patient's well-being.",
+      "For Zentrum Moyland and a therapist, we are developing an AI avatar that conducts the initial therapeutic conversation. It covers a range of profile areas, including stress and sleep but also others, to assess the patient's well-being.",
     "projectA.p2":
       "The conversation takes 12 minutes. Afterwards, a dashboard presents an analysis: statements from the entire conversation are summarized and shown visually and graphically, together with an evaluation of the patient's behavior via the camera.",
     "projectA.factsTitle": "At a glance",
     "projectA.factClient": "Client: Zentrum Moyland and a therapist",
     "projectA.factDuration": "Conversation length: 12 minutes",
-    "projectA.factTopics": "Profile areas: e.g. stress and sleep",
+    "projectA.factTopics": "Profile areas: including stress and sleep, among others",
     "projectA.factResult": "Result: dashboard with summary, charts and camera-based behavior evaluation",
     "projectA.cta": "Open the application",
   },
