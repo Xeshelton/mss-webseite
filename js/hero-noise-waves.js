@@ -28,22 +28,18 @@
     };
   }
 
-  // Dunklere Rosttoene, damit die Wellen auf weissem Grund sichtbar bleiben.
-  // Oberste Welle bewusst NICHT im Akzent-Orange (#f37021), da diese Farbe
-  // exakt der Akzentbuchstaben (m/s) im Logo entspricht und die Welle die
-  // Buchstaben sonst beim Ueberlappen unsichtbar macht. Das kraeftige Orange
-  // sitzt stattdessen unten, wo es nicht mit den Buchstaben kollidiert.
-  const COLORS = ["#8a3208", "#c1440e", "#f37021"];
-  const CENTERS = [0.3, 0.55, 0.8];
+  // Dieselben duennen, dezenten Wellen wie im Kontakt-Bereich (js/kontakt-waves.js).
+  // Oberste Welle bewusst nicht im Akzent-Orange (#f37021) der Logo-Buchstaben.
+  const COLORS = ["#c1440e", "#f37021", "#8a3208"];
+  const CENTERS = [0.3, 0.55, 0.78];
   const noiseFns = COLORS.map(() => createNoise1D());
-  const BACKGROUND = "#ffffff";
-  const WAVE_OPACITY = 0.05;
-  const WAVE_WIDTH = 55;
-  const BLUR = 22;
+  const WAVE_OPACITY = 0.28;
+  const WAVE_WIDTH = 45;
+  const BLUR = 12;
   const SPEED = 0.0018;
   // Canvas groesser als der sichtbare Bereich zeichnen, damit die Unschaerfe
   // am Rand des Canvas ausserhalb des sichtbaren Ausschnitts landet.
-  const BLEED = 90;
+  const BLEED = 60;
 
   let w = 0;
   let h = 0;
@@ -65,17 +61,13 @@
   }
 
   function drawWaves() {
-    ctx.globalAlpha = 1;
-    ctx.fillStyle = BACKGROUND;
-    ctx.globalAlpha = WAVE_OPACITY;
-    ctx.fillRect(0, 0, w, h);
-
+    ctx.clearRect(0, 0, w, h);
     t += SPEED;
     for (let i = 0; i < COLORS.length; i++) {
       ctx.beginPath();
       ctx.lineWidth = WAVE_WIDTH;
       ctx.strokeStyle = COLORS[i];
-      ctx.globalAlpha = 0.35;
+      ctx.globalAlpha = WAVE_OPACITY;
       for (let x = 0; x <= w; x += 6) {
         const y = noiseFns[i](x / 800 + t) * (h * 0.14) + h * CENTERS[i];
         ctx.lineTo(x, y);

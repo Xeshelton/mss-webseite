@@ -1,16 +1,36 @@
 <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
   <rect width="400" height="300" fill="#ececec"/>
-  <rect x="140" y="55" width="120" height="190" rx="10" fill="#ffffff" stroke="#d8d8d8" stroke-width="2"/>
-  <rect x="170" y="45" width="60" height="24" rx="6" fill="#262626"/>
-  <rect x="160" y="90" width="80" height="10" rx="5" fill="#e0e0e0"/>
-  <circle cx="165" cy="130" r="8" fill="none" stroke="#f37021" stroke-width="3"/>
-  <path d="M161 130l3 4 6-8" fill="none" stroke="#f37021" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-  <rect x="185" y="126" width="55" height="8" rx="4" fill="#e0e0e0"/>
-  <circle cx="165" cy="160" r="8" fill="none" stroke="#f37021" stroke-width="3"/>
-  <path d="M161 160l3 4 6-8" fill="none" stroke="#f37021" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-  <rect x="185" y="156" width="55" height="8" rx="4" fill="#e0e0e0"/>
-  <circle cx="165" cy="190" r="8" fill="none" stroke="#cfcfcf" stroke-width="3"/>
-  <rect x="185" y="186" width="40" height="8" rx="4" fill="#e0e0e0"/>
-  <circle cx="270" cy="205" r="34" fill="#f37021"/>
-  <path d="M270 190v16l12 8" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Gespraech mit dem Avatar -->
+  <rect x="24" y="44" width="176" height="212" rx="12" fill="#ffffff" stroke="#d8d8d8" stroke-width="2"/>
+  <circle cx="42" cy="62" r="4" fill="#e0e0e0"/>
+  <circle cx="56" cy="62" r="4" fill="#e0e0e0"/>
+  <rect x="140" y="52" width="48" height="20" rx="10" fill="#f37021"/>
+  <text x="164" y="66" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">12:00</text>
+  <path d="M60 244 Q60 184 112 184 Q164 184 164 244 Z" fill="#262626"/>
+  <circle cx="112" cy="132" r="38" fill="#f37021"/>
+  <circle cx="99" cy="126" r="4" fill="#262626"/>
+  <circle cx="125" cy="126" r="4" fill="#262626"/>
+  <path d="M97 145 Q112 158 127 145" fill="none" stroke="#262626" stroke-width="4" stroke-linecap="round"/>
+  <path d="M158 116 Q168 132 158 148" fill="none" stroke="#f37021" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+  <path d="M168 108 Q184 132 168 156" fill="none" stroke="#f37021" stroke-width="3" stroke-linecap="round" opacity="0.3"/>
+
+  <!-- Pfeil zum Dashboard -->
+  <circle cx="208" cy="150" r="13" fill="#f37021"/>
+  <path d="M202 150h12 M209 144l6 6-6 6" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Dashboard mit Auswertung -->
+  <rect x="222" y="60" width="158" height="184" rx="12" fill="#ffffff" stroke="#d8d8d8" stroke-width="2"/>
+  <rect x="238" y="76" width="64" height="9" rx="4.5" fill="#262626"/>
+  <rect x="238" y="106" width="34" height="8" rx="4" fill="#e0e0e0"/>
+  <rect x="278" y="106" width="86" height="8" rx="4" fill="#ececec"/>
+  <rect x="278" y="106" width="62" height="8" rx="4" fill="#f37021"/>
+  <rect x="238" y="128" width="34" height="8" rx="4" fill="#e0e0e0"/>
+  <rect x="278" y="128" width="86" height="8" rx="4" fill="#ececec"/>
+  <rect x="278" y="128" width="38" height="8" rx="4" fill="#c1440e"/>
+  <rect x="238" y="150" width="34" height="8" rx="4" fill="#e0e0e0"/>
+  <rect x="278" y="150" width="86" height="8" rx="4" fill="#ececec"/>
+  <rect x="278" y="150" width="74" height="8" rx="4" fill="#f37021"/>
+  <polyline points="238,222 262,204 284,214 308,188 332,198 364,176" fill="none" stroke="#f37021" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="238" y1="230" x2="364" y2="230" stroke="#e0e0e0" stroke-width="2"/>
 </svg>
