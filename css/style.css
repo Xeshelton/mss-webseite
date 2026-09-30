@@ -182,70 +182,13 @@ nav.main-nav a:hover::before {
   overflow: hidden;
 }
 
-.hero-canvas {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.hero-noise-canvas,
-.section-noise-canvas {
-  position: absolute;
-  display: block;
-}
-
-/* Hero + "Ueber uns" teilen sich eine durchgehende Wellen-Flaeche */
+/* Hero + "Ueber uns" teilen sich denselben hellgrauen Hintergrund */
 .wave-zone {
-  position: relative;
-  overflow: hidden;
   background: var(--bg);
 }
 
 .wave-zone .hero {
   background: transparent;
-}
-
-.wave-zone > .hero-noise-canvas {
-  z-index: 0;
-}
-
-.wave-zone > section {
-  position: relative;
-  z-index: 1;
-}
-
-.hero .container {
-  position: relative;
-  z-index: 2;
-}
-
-.section-fx {
-  position: relative;
-  overflow: hidden;
-}
-
-.section-canvas {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.section-fx .container {
-  position: relative;
-  z-index: 2;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-canvas,
-  .hero-noise-canvas,
-  .section-canvas,
-  .section-noise-canvas {
-    display: none;
-  }
 }
 
 .hero-logo {
@@ -417,19 +360,9 @@ nav.main-nav a:hover::before {
 
 /* Kontakt */
 
-.kontakt-columns {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 32px;
-  margin-top: 36px;
-}
-
 .contact-panel {
-  flex: 1 1 380px;
   max-width: 480px;
-  margin: 0;
+  margin: 36px auto 0;
   background: var(--card-bg);
   border-radius: var(--radius);
   border: 1px solid #e2e2e2;
@@ -437,67 +370,6 @@ nav.main-nav a:hover::before {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
   padding: 8px 0;
   overflow: hidden;
-}
-
-.contact-form {
-  flex: 1 1 380px;
-  max-width: 480px;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  text-align: left;
-  background: var(--card-bg);
-  border-radius: var(--radius);
-  border: 1px solid #e2e2e2;
-  border-top: 4px solid var(--orange);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-  padding: 28px 32px;
-}
-
-.form-field {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.form-field label {
-  font-weight: 700;
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.4px;
-  color: var(--text-muted);
-}
-
-.form-field input,
-.form-field textarea {
-  font-family: inherit;
-  font-size: 0.95rem;
-  color: var(--text);
-  background: var(--white);
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 10px 12px;
-  resize: vertical;
-}
-
-.form-field input:focus,
-.form-field textarea:focus {
-  outline: none;
-  border-color: var(--orange);
-}
-
-.contact-form .btn {
-  align-self: flex-start;
-  border: none;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: 1rem;
-}
-
-.form-note {
-  margin: 0;
-  font-size: 0.85rem;
-  color: var(--text-muted);
 }
 
 .contact-row {
@@ -571,11 +443,6 @@ nav.main-nav a:hover::before {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-}
-
-.dd-placeholder {
-  color: var(--text-muted);
-  font-style: italic;
 }
 
 .copy-btn {

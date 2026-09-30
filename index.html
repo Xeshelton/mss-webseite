@@ -40,8 +40,6 @@
     <div class="page-content">
 
   <div class="wave-zone">
-  <canvas id="heroNoiseCanvas" class="hero-noise-canvas" aria-hidden="true"></canvas>
-
   <section id="home" class="hero">
     <div class="container">
       <h1 class="hero-logo">
@@ -100,12 +98,10 @@
     </div>
   </section>
 
-  <section id="kontakt" class="section section-fx">
-    <canvas id="kontaktWaves" class="section-noise-canvas" aria-hidden="true"></canvas>
+  <section id="kontakt" class="section">
     <div class="container">
       <h2 data-i18n="kontakt.heading">Kontakt</h2>
       <div class="underline"></div>
-      <div class="kontakt-columns">
       <dl class="contact-panel">
         <div class="contact-row">
           <span class="contact-icon">
@@ -190,31 +186,20 @@
           <div>
             <dt data-i18n="kontakt.email">E-Mail</dt>
             <dd class="dd-with-copy">
-              <span class="dd-text dd-placeholder" data-i18n="kontakt.emailPending">folgt in Kürze</span>
+              <span class="dd-text"><a href="mailto:birgit@marvelous-software-solutions.de">birgit@marvelous-software-solutions.de</a></span>
+              <button class="copy-btn" type="button" data-copy="birgit@marvelous-software-solutions.de" aria-label="E-Mail-Adresse kopieren" title="Kopieren">
+                <svg class="icon-copy" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <rect x="9" y="9" width="12" height="12" rx="2" stroke="currentColor" stroke-width="1.6" />
+                  <path d="M6 15H4.6A1.6 1.6 0 0 1 3 13.4V4.6A1.6 1.6 0 0 1 4.6 3h8.8A1.6 1.6 0 0 1 15 4.6V6" stroke="currentColor" stroke-width="1.6" />
+                </svg>
+                <svg class="icon-check" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M4 12l6 6L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
             </dd>
           </div>
         </div>
       </dl>
-      <form class="contact-form" id="contactForm">
-        <div class="form-field">
-          <label for="cf-name" data-i18n="form.name">Name</label>
-          <input type="text" id="cf-name" name="name" placeholder="Dein Name" data-i18n-placeholder="form.namePlaceholder" autocomplete="name" required />
-        </div>
-        <div class="form-field">
-          <label for="cf-email" data-i18n="form.email">E-Mail</label>
-          <input type="email" id="cf-email" name="email" placeholder="deine@email.de" data-i18n-placeholder="form.emailPlaceholder" autocomplete="email" required />
-        </div>
-        <div class="form-field">
-          <label for="cf-message" data-i18n="form.message">Nachricht</label>
-          <textarea id="cf-message" name="message" rows="5" placeholder="Deine Nachricht an uns" data-i18n-placeholder="form.messagePlaceholder" required></textarea>
-        </div>
-        <button type="submit" class="btn" data-i18n="form.submit">Absenden</button>
-        <p class="form-note" id="contactFormNote" hidden data-i18n="form.note">
-          Danke für deine Nachricht! Die technische Anbindung ans Postfach folgt in Kürze — bitte melde dich
-          bis dahin telefonisch oder per E-Mail.
-        </p>
-      </form>
-      </div>
     </div>
   </section>
 
@@ -233,7 +218,5 @@
 
   <script src="js/main.js"></script>
   <script src="js/i18n.js"></script>
-  <script src="js/hero-noise-waves.js"></script>
-  <script src="js/kontakt-waves.js"></script>
 </body>
 </html>
