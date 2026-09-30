@@ -607,12 +607,12 @@ nav.main-nav a:hover::before {
 .legal-page h2 {
   font-size: 1.15rem;
   color: var(--orange);
-  margin-bottom: 4px;
+  margin: 28px 0 4px;
 }
 
-.legal-page .placeholder {
-  color: var(--text-muted);
-  font-style: italic;
+.legal-page h3 {
+  font-size: 1rem;
+  margin: 20px 0 2px;
 }
 
 /* Mobile */
