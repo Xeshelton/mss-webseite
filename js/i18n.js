@@ -6,7 +6,9 @@ const translations = {
     "nav.home": "Home",
     "nav.ueberUns": "Über uns",
     "nav.projekte": "Projekte",
+    "nav.team": "Team",
     "nav.kontakt": "Kontakt",
+    "team.heading": "Team",
     "hero.copy":
       "Wir entwickeln Software und digitale Produkte — von E-Learning über Serious Games bis hin zu individuellen Lösungen für Training, Coaching und Wissensvermittlung.",
     "hero.cta": "Kontakt aufnehmen",
@@ -43,7 +45,9 @@ const translations = {
     "nav.home": "Home",
     "nav.ueberUns": "About us",
     "nav.projekte": "Projects",
+    "nav.team": "Team",
     "nav.kontakt": "Contact",
+    "team.heading": "Team",
     "hero.copy":
       "We develop software and digital products — from e-learning and serious games to tailored solutions for training, coaching and knowledge transfer.",
     "hero.cta": "Get in touch",
