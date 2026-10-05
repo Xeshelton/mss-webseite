@@ -9,6 +9,8 @@ const translations = {
     "nav.team": "Team",
     "nav.kontakt": "Kontakt",
     "team.heading": "Team",
+    "team.roleLead": "Geschäftsleitung",
+    "team.roleDev": "Softwareentwicklung",
     "hero.copy":
       "Wir entwickeln Software und digitale Produkte — von E-Learning über Serious Games bis hin zu individuellen Lösungen für Training, Coaching und Wissensvermittlung.",
     "hero.cta": "Kontakt aufnehmen",
@@ -48,6 +50,8 @@ const translations = {
     "nav.team": "Team",
     "nav.kontakt": "Contact",
     "team.heading": "Team",
+    "team.roleLead": "Management",
+    "team.roleDev": "Software development",
     "hero.copy":
       "We develop software and digital products — from e-learning and serious games to tailored solutions for training, coaching and knowledge transfer.",
     "hero.cta": "Get in touch",
