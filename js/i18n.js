@@ -11,12 +11,10 @@ const translations = {
     "team.heading": "Team",
     "team.roleLead": "Geschäftsleitung",
     "team.roleDev": "Softwareentwicklung",
-    "hero.copy":
-      "Wir entwickeln Software und digitale Produkte — von E-Learning über Serious Games bis hin zu individuellen Lösungen für Training, Coaching und Wissensvermittlung.",
     "hero.cta": "Kontakt aufnehmen",
     "ueberUns.heading": "Über uns",
     "ueberUns.text":
-      "Hier entsteht in Kürze mehr über Marvelous Software Solutions — wer wir sind, was uns antreibt und woran wir arbeiten. Inhalte folgen.",
+      "Wir entwickeln Software und digitale Produkte — von E-Learning über Serious Games bis hin zu individuellen Lösungen für Training, Coaching und Wissensvermittlung.",
     "projekte.heading": "Projekte",
     "projekte.subtitle": "Eine Auswahl unserer Arbeit — folgt in Kürze.",
     "kontakt.heading": "Kontakt",
@@ -52,12 +50,10 @@ const translations = {
     "team.heading": "Team",
     "team.roleLead": "Management",
     "team.roleDev": "Software development",
-    "hero.copy":
-      "We develop software and digital products — from e-learning and serious games to tailored solutions for training, coaching and knowledge transfer.",
     "hero.cta": "Get in touch",
     "ueberUns.heading": "About us",
     "ueberUns.text":
-      "More about Marvelous Software Solutions is coming soon — who we are, what drives us and what we're working on.",
+      "We develop software and digital products — from e-learning and serious games to tailored solutions for training, coaching and knowledge transfer.",
     "projekte.heading": "Projects",
     "projekte.subtitle": "A selection of our work — coming soon.",
     "kontakt.heading": "Contact",

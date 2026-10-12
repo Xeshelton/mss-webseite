@@ -235,20 +235,6 @@ nav.main-nav a:hover::before {
   border-radius: 0;
 }
 
-.hero p {
-  color: var(--text);
-  max-width: 620px;
-  margin: 0 auto 30px;
-  font-size: 1.25rem;
-  /* Weisses Halo um die Buchstaben, damit der Text lesbar bleibt, egal wie
-     dunkel die Welle im Hintergrund gerade an der Stelle ist. */
-  text-shadow:
-    0 0 6px #fff,
-    0 0 6px #fff,
-    0 0 12px #fff,
-    0 0 12px #fff;
-}
-
 .btn {
   display: inline-block;
   background: var(--orange);
