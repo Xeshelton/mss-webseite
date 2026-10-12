@@ -264,7 +264,15 @@ nav.main-nav a:hover::before {
   display: block;
   width: fit-content;
   font-size: 1.8rem;
-  margin: 0 auto 8px;
+  margin: 0 auto;
+}
+
+.section:not(.project-page) h2::after {
+  content: "";
+  display: block;
+  height: 4px;
+  margin-top: 14px;
+  background: var(--text);
 }
 
 .section .subtitle {
@@ -273,21 +281,18 @@ nav.main-nav a:hover::before {
   margin: 0 0 40px;
 }
 
-.underline {
-  height: 4px;
-  background: var(--text);
-  margin: 14px auto 0;
-  border-radius: 0;
-}
 
 .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
+  margin-top: 40px;
 }
 
 .card {
   display: block;
+  flex: 0 1 320px;
   background: var(--card-bg);
   border-radius: var(--radius);
   padding: 28px;

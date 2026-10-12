@@ -1,0 +1,46 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#ececec"/>
+  <rect x="30" y="42" width="340" height="216" rx="12" fill="#ffffff" stroke="#d8d8d8" stroke-width="2"/>
+
+  <!-- Sterne -->
+  <g fill="#f37021">
+    <circle cx="64" cy="70" r="3"/>
+    <circle cx="330" cy="62" r="3"/>
+    <circle cx="344" cy="116" r="2"/>
+    <circle cx="58" cy="132" r="2"/>
+  </g>
+
+  <!-- Gluehbirne: die Erfindung -->
+  <path d="M164 118a38 38 0 1 1 76 0c0 16-12 24-16 38h-44c-4-14-16-22-16-38z" fill="none" stroke="#262626" stroke-width="4" stroke-linejoin="round"/>
+  <line x1="182" y1="168" x2="222" y2="168" stroke="#262626" stroke-width="4" stroke-linecap="round"/>
+  <line x1="186" y1="180" x2="218" y2="180" stroke="#262626" stroke-width="4" stroke-linecap="round"/>
+  <path d="M188 150v-22l14 10 14-10v22" fill="none" stroke="#f37021" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <g stroke="#f37021" stroke-width="4" stroke-linecap="round">
+    <line x1="202" y1="56" x2="202" y2="46"/>
+    <line x1="146" y1="82" x2="138" y2="74"/>
+    <line x1="258" y1="82" x2="266" y2="74"/>
+    <line x1="132" y1="124" x2="122" y2="124"/>
+    <line x1="272" y1="124" x2="282" y2="124"/>
+  </g>
+
+  <!-- Zahnrad -->
+  <circle cx="302" cy="168" r="18" fill="none" stroke="#262626" stroke-width="4"/>
+  <circle cx="302" cy="168" r="6" fill="#262626"/>
+  <g stroke="#262626" stroke-width="5" stroke-linecap="round">
+    <line x1="302" y1="142" x2="302" y2="146"/>
+    <line x1="302" y1="190" x2="302" y2="194"/>
+    <line x1="276" y1="168" x2="280" y2="168"/>
+    <line x1="324" y1="168" x2="328" y2="168"/>
+  </g>
+
+  <!-- Skizze / Modell -->
+  <rect x="58" y="146" width="52" height="42" rx="4" fill="none" stroke="#262626" stroke-width="4" stroke-dasharray="6 5"/>
+  <path d="M68 176l12-14 10 8 12-12" fill="none" stroke="#f37021" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Liveticker: Zeitreise-Nachrichten -->
+  <rect x="58" y="212" width="284" height="34" rx="8" fill="#ececec"/>
+  <rect x="68" y="221" width="52" height="16" rx="8" fill="#f37021"/>
+  <text x="94" y="233" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#ffffff" text-anchor="middle">+100</text>
+  <rect x="132" y="225" width="120" height="8" rx="4" fill="#cfcfcf"/>
+  <rect x="262" y="225" width="64" height="8" rx="4" fill="#cfcfcf"/>
+</svg>

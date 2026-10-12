@@ -1,15 +1,35 @@
 <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
   <rect width="400" height="300" fill="#ececec"/>
-  <rect x="80" y="55" width="180" height="150" rx="8" fill="#ffffff" stroke="#d8d8d8" stroke-width="2"/>
-  <rect x="80" y="205" width="180" height="10" fill="#262626"/>
-  <rect x="150" y="215" width="40" height="24" fill="#262626"/>
-  <rect x="96" y="75" width="80" height="8" rx="4" fill="#e0e0e0"/>
-  <circle cx="115" cy="140" r="30" fill="none" stroke="#e0e0e0" stroke-width="16"/>
-  <path d="M115 110a30 30 0 0 1 26 45" fill="none" stroke="#f37021" stroke-width="16"/>
-  <rect x="165" y="110" width="10" height="45" fill="#f37021"/>
-  <rect x="180" y="95" width="10" height="60" fill="#c1440e"/>
-  <rect x="195" y="120" width="10" height="35" fill="#f37021"/>
-  <circle cx="290" cy="150" r="55" fill="#f37021"/>
-  <circle cx="290" cy="128" r="16" fill="#ffffff"/>
-  <path d="M262 190c0-18 12-32 28-32s28 14 28 32" fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Sprechblase: Hallo -->
+  <rect x="26" y="52" width="150" height="76" rx="14" fill="#ffffff" stroke="#262626" stroke-width="4"/>
+  <path d="M58 128 L50 154 L84 128" fill="#ffffff" stroke="#262626" stroke-width="4" stroke-linejoin="round"/>
+  <rect x="52" y="124" width="36" height="8" fill="#ffffff"/>
+  <text x="101" y="102" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#262626" text-anchor="middle">Hallo!</text>
+
+  <!-- Antwort-Blase -->
+  <rect x="64" y="162" width="130" height="62" rx="14" fill="#f37021"/>
+  <path d="M170 224 L182 246 L150 224" fill="#f37021"/>
+  <circle cx="104" cy="193" r="6" fill="#ffffff"/>
+  <circle cx="129" cy="193" r="6" fill="#ffffff"/>
+  <circle cx="154" cy="193" r="6" fill="#ffffff"/>
+
+  <!-- Formular mit Haken -->
+  <rect x="226" y="40" width="150" height="196" rx="12" fill="#ffffff" stroke="#d8d8d8" stroke-width="2"/>
+  <rect x="244" y="58" width="70" height="9" rx="4.5" fill="#262626"/>
+  <circle cx="252" cy="96" r="8" fill="none" stroke="#f37021" stroke-width="3"/>
+  <path d="M248 96l3 4 6-8" fill="none" stroke="#f37021" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="270" y="92" width="86" height="8" rx="4" fill="#e0e0e0"/>
+  <circle cx="252" cy="126" r="8" fill="none" stroke="#f37021" stroke-width="3"/>
+  <path d="M248 126l3 4 6-8" fill="none" stroke="#f37021" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="270" y="122" width="70" height="8" rx="4" fill="#e0e0e0"/>
+  <circle cx="252" cy="156" r="8" fill="none" stroke="#cfcfcf" stroke-width="3"/>
+  <rect x="270" y="152" width="78" height="8" rx="4" fill="#e0e0e0"/>
+  <rect x="244" y="186" width="114" height="30" rx="6" fill="none" stroke="#262626" stroke-width="3"/>
+  <rect x="254" y="198" width="60" height="7" rx="3.5" fill="#e0e0e0"/>
+
+  <!-- Wegweiser / Standort -->
+  <circle cx="338" cy="230" r="24" fill="#f37021"/>
+  <path d="M338 216a10 10 0 0 1 10 10c0 7-10 18-10 18s-10-11-10-18a10 10 0 0 1 10-10z" fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="338" cy="226" r="3.5" fill="#ffffff"/>
 </svg>

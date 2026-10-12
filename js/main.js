@@ -110,20 +110,8 @@ function equalizeHeroLogo() {
   if (underline) underline.style.width = total + "px";
 }
 
-// Zieht die Unterstriche unter "Ueber uns" / "Projekte" / "Kontakt" auf
-// exakt die Breite der Ueberschrift.
-function equalizeSectionUnderlines() {
-  document.querySelectorAll(".section h2").forEach((heading) => {
-    const underline = heading.nextElementSibling;
-    if (underline && underline.classList.contains("underline")) {
-      underline.style.width = heading.getBoundingClientRect().width + "px";
-    }
-  });
-}
-
 function refreshLayoutWidths() {
   equalizeHeroLogo();
-  equalizeSectionUnderlines();
 }
 
 if (document.fonts && document.fonts.ready) {

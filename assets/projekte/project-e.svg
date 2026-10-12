@@ -1,0 +1,35 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#ececec"/>
+
+  <!-- Bildschirm -->
+  <rect x="50" y="46" width="300" height="168" rx="12" fill="#ffffff" stroke="#262626" stroke-width="5"/>
+  <rect x="176" y="214" width="48" height="14" fill="#262626"/>
+  <rect x="140" y="228" width="120" height="10" rx="5" fill="#262626"/>
+
+  <!-- Wuerfel (Pappe, Umriss) -->
+  <g fill="none" stroke="#262626" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <polygon points="200,66 252,96 252,156 200,186 148,156 148,96"/>
+    <polyline points="148,96 200,126 252,96"/>
+    <line x1="200" y1="126" x2="200" y2="186"/>
+  </g>
+
+  <!-- Diamant in der Mitte -->
+  <polygon points="200,106 220,124 200,152 180,124" fill="#f37021"/>
+  <polyline points="180,124 220,124" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <polyline points="190,115 200,124 210,115" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Herausgeloeste Stuecke -->
+  <g fill="none" stroke="#262626" stroke-width="4" stroke-dasharray="6 5" stroke-linejoin="round">
+    <polygon points="292,72 316,86 316,114 292,128 268,114 268,86"/>
+    <polygon points="108,150 128,162 128,186 108,198 88,186 88,162"/>
+  </g>
+  <circle cx="292" cy="100" r="5" fill="#f37021"/>
+
+  <!-- Funkeln -->
+  <g stroke="#f37021" stroke-width="4" stroke-linecap="round">
+    <line x1="232" y1="104" x2="240" y2="96"/>
+    <line x1="168" y1="106" x2="160" y2="98"/>
+    <line x1="200" y1="194" x2="200" y2="202"/>
+  </g>
+
+</svg>
