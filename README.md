@@ -15,15 +15,16 @@ Einfache statische Website (reines HTML/CSS/JS, kein Build-Schritt nötig).
 Einfach `index.html` im Browser öffnen, oder z. B. mit der VS-Code-Erweiterung
 "Live Server" starten.
 
-## Deployment (Vercel)
+## Deployment (GitHub Pages)
 
-Dieses Projekt braucht keinen Build-Schritt — Vercel erkennt es automatisch als
-statische Seite. Am einfachsten: Repo mit GitHub verbinden und in Vercel
-importieren, dann deployt jeder Push automatisch.
+Dieses Projekt braucht keinen Build-Schritt. Die Seite wird über GitHub Pages
+direkt aus dem Branch `main` (Ordner `/ (root)`) veröffentlicht, jeder Push
+aktualisiert sie automatisch. Die Domain `www.marvelous-software-solutions.de`
+steht in der Datei `CNAME`; die DNS-Einträge liegen bei IONOS
+(CNAME `www` → `xeshelton.github.io`, vier A-Records für die Hauptdomain).
+Die Mail-Einträge (MX, SPF, DKIM) und der TXT-Eintrag für die Google Search
+Console dürfen nicht gelöscht werden.
 
 ## Offene Punkte
 
-- Fehlende Angaben im Impressum ergänzen (Vertretungsberechtigte(r), Telefon,
-  E-Mail, Handelsregister, USt-ID)
-- Texte für "Über uns" und "Projekte" ergänzen
 - Datenschutzerklärung erweitern, sobald Formulare/Analytics dazukommen
