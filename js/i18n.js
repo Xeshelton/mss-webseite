@@ -44,17 +44,17 @@ const translations = {
     "projectB.card":
       "Eine KI-gestützte Plattform, die Ideen über längere Zeit entwickelt: mit sechs klar getrennten Rollen von der Recherche bis zur Roadmap.",
     "projectB.summary":
-      "Eine KI-gestützte Plattform für die nachhaltige Entwicklung von Ideen, mit mehr Strenge als ein gewöhnliches Chat-Fenster.",
+      "Eine KI-gestützte Plattform für die nachhaltige Entwicklung von Ideen, die gründlicher und methodischer vorgeht als ein gewöhnlicher KI-Chat.",
     "projectB.p1":
       "Die Creativity Engine richtet sich an Gründerinnen und Gründer, Solo-Builder und alle, die beim Entwickeln von Ideen mehr Sorgfalt brauchen, als ein Chat-Fenster bietet, ohne dass ein ganzes Team bereitsteht, das jeden Entwurf hinterfragt.",
     "projectB.p2":
-      "Gängige KI-Chats vermischen Generieren, Bewerten und Entscheiden in einem einzigen Gesprächsfluss. Das ist schnell, schwächt aber oft die Reflexion: Antworten wirken selbstsicher, Kritik wird zur Zustimmung, und wie sich eine Idee verändert hat, lässt sich kaum noch nachvollziehen. Die Creativity Engine behandelt deshalb jede Idee als dauerhaftes Objekt statt als flüchtige Nachricht und teilt die Arbeit auf sechs Rollen auf: Explorer, Generator, Evolution Engine, Jury, Theory Builder und Roadmapper. Jede Rolle übernimmt eine andere Denkaufgabe. Die Recherche bleibt belegt, das Generieren bewusst, die Kritik unabhängig vom Entwurf, der sie ausgelöst hat, und die Bewertung erfolgt aus mehreren Perspektiven statt in einem einzigen Urteil.",
+      "Gängige KI-Chats vermischen Generieren, Bewerten und Entscheiden in einem einzigen Gesprächsfluss. Das ist schnell, schwächt aber oft die Reflexion: Antworten wirken selbstsicher, Kritik wird zur Zustimmung, und wie sich eine Idee verändert hat, lässt sich kaum noch nachvollziehen. Die Creativity Engine behandelt deshalb jede Idee als dauerhaftes Objekt statt als flüchtige Nachricht und teilt die Arbeit auf sechs Rollen auf: Entdecker, Ideengeber, Weiterentwickler, Jury, Theoriebildner und Roadmap-Planer. Jede Rolle übernimmt eine andere Denkaufgabe. Die Recherche bleibt belegt, das Generieren bewusst, die Kritik unabhängig vom Entwurf, der sie ausgelöst hat, und die Bewertung erfolgt aus mehreren Perspektiven statt in einem einzigen Urteil.",
     "projectB.p3":
       "Das Produkt wird vom Menschen gesteuert. Die Oberfläche ist um eine Arbeitsfläche aufgebaut, auf der Nutzerinnen und Nutzer Elemente bewusst platzieren, verbinden und ausführen. Das System darf unterstützen und Vorschläge machen, führt aber nie unbemerkt einen kompletten Plan aus: Die KI stärkt das Urteilsvermögen, sie ersetzt es nicht. Technisch ist die Plattform eine Webanwendung in TypeScript mit Next.js (App Router), API-Routen als Backend und OpenAI-Modellen über ein gemeinsames Gateway. Das Design ist bewusst zurückhaltend und professionell: flache Flächen, helle strukturelle Linien und Farbe nur sparsam für aktive oder markierte Zustände.",
     "projectB.fact1":
       "Zielgruppe: Gründerinnen und Gründer, Solo-Builder und alle, die Ideen sorgfältig entwickeln wollen",
     "projectB.fact2":
-      "Sechs Rollen: Explorer, Generator, Evolution Engine, Jury, Theory Builder, Roadmapper",
+      "Sechs Rollen: Entdecker, Ideengeber, Weiterentwickler, Jury, Theoriebildner, Roadmap-Planer",
     "projectB.fact3":
       "Prinzip: Der Mensch steuert, die KI unterstützt und schlägt vor",
     "projectB.fact4":
@@ -100,17 +100,15 @@ const translations = {
     "projectE.summary":
       "Ein Computerspiel, das in der Ausstellung zu Erwin Heerich im Museum Schloss Moyland dessen Werk interaktiv erklärt.",
     "projectE.p1":
-      "„Mein Heerich“ ist ein Computerspiel, das in der Ausstellung zum Künstler Erwin Heerich im Museum Schloss Moyland gezeigt wurde und dessen Werk interaktiv erklärt. Entwickelt wurde es von Birgit Mosler und ihrem Kalkarer Start-up, gemeinsam mit Prof. Ido Iurgel von der Hochschule Rhein-Waal, der als Berater beteiligt war.",
+      "„Mein Heerich“ ist ein Computerspiel, das in der Ausstellung zum Künstler Erwin Heerich im Museum Schloss Moyland gezeigt wurde und dessen Werk interaktiv erklärt. Entwickelt wurde es von Birgit Mosler gemeinsam mit Prof. Ido Iurgel von der Hochschule Rhein-Waal, der als Berater beteiligt war.",
     "projectE.p2":
       "Am großen Bildschirm im ersten Eckraum der Heerich-Ausstellung im Erdgeschoss von Schloss Moyland konnten Besucherinnen und Besucher einen fein ausgeschnittenen Würfel aus Pappe virtuell Stück für Stück zerlegen. In seiner Mitte sitzt ein blau schimmernder Diamant, den es nur im Spiel gibt.",
     "projectE.fact1":
       "Ort: Museum Schloss Moyland",
     "projectE.fact2":
-      "Entwicklung: Birgit Mosler und ihr Kalkarer Start-up",
+      "Entwicklung: Birgit Mosler",
     "projectE.fact3":
       "Beratung: Prof. Ido Iurgel, Hochschule Rhein-Waal",
-    "projectE.fact4":
-      "Presse: Rheinische Post",
     "projectE.cta":
       "Zum Artikel (Rheinische Post)",
     "project.factsTitle": "Auf einen Blick",
@@ -213,17 +211,15 @@ const translations = {
     "projectE.summary":
       "A computer game that interactively explains the work of Erwin Heerich in the exhibition at Museum Schloss Moyland.",
     "projectE.p1":
-      "“Mein Heerich” is a computer game that was shown in the exhibition on the artist Erwin Heerich at Museum Schloss Moyland and explains his work interactively. It was developed by Birgit Mosler and her Kalkar start-up, together with Prof. Ido Iurgel of Rhine-Waal University of Applied Sciences, who contributed as an advisor.",
+      "“Mein Heerich” is a computer game that was shown in the exhibition on the artist Erwin Heerich at Museum Schloss Moyland and explains his work interactively. It was developed by Birgit Mosler together with Prof. Ido Iurgel of Rhine-Waal University of Applied Sciences, who contributed as an advisor.",
     "projectE.p2":
       "At the large screen in the first corner room of the Heerich exhibition on the ground floor of Schloss Moyland, visitors could take a finely cut cardboard cube apart virtually, piece by piece. At its center sits a blue, shimmering diamond that exists only in the game.",
     "projectE.fact1":
       "Location: Museum Schloss Moyland",
     "projectE.fact2":
-      "Development: Birgit Mosler and her Kalkar start-up",
+      "Development: Birgit Mosler",
     "projectE.fact3":
       "Advice: Prof. Ido Iurgel, Rhine-Waal University of Applied Sciences",
-    "projectE.fact4":
-      "Press: Rheinische Post",
     "projectE.cta":
       "Read the article (Rheinische Post)",
     "project.factsTitle": "At a glance",
