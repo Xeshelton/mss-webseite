@@ -111,6 +111,40 @@ const translations = {
       "Beratung: Prof. Ido Iurgel, Hochschule Rhein-Waal",
     "projectE.cta":
       "Zum Artikel (Rheinische Post)",
+    "projectF.title":
+      "VIVADI – digitaler Begleiter für das Wohlbefinden",
+    "projectF.card":
+      "Ein digitaler Begleiter für kleine Schritte im Alltag: ein ruhiges Gespräch und kurze Übungen für das eigene Wohlbefinden. Prototyp mit Demo.",
+    "projectF.summary":
+      "VIVADI ist ein digitaler Begleiter für kleine Schritte im Alltag, wenn es um die psychische Gesundheit und das eigene Wohlbefinden geht.",
+    "projectF.p1":
+      "Er führt mit Ihnen ein ruhiges Gespräch, per Sprache oder Text, und schlägt Ihnen passende kurze Übungen vor. Er stellt keine Diagnosen und ersetzt keine Behandlung, sondern unterstützt im Alltag. Sie entscheiden jederzeit, welche Informationen Sie mit Ihrer Therapeutin oder Ihrem Therapeuten teilen.",
+    "projectF.h2":
+      "Worum es geht",
+    "projectF.p2":
+      "VIVADI begleitet Menschen mit kurzen, alltagstauglichen Übungen bei vielen Themen rund um das eigene Wohlbefinden. Jeden Tag nehmen Sie sich etwa fünf Minuten: Sie sagen, wie es Ihnen geht, VIVADI schlägt eine passende kurze Übung vor, und anschließend schauen Sie gemeinsam, was sie gebracht hat. Nach einer Woche gibt es einen Rückblick. Wenn Sie möchten, schicken Sie die Zusammenfassung selbst an Ihren Therapeuten.",
+    "projectF.h3":
+      "Was Sie in der Demo sehen",
+    "projectF.p3":
+      "Die aktuelle Demo zeigt den Start mit VIVADI, das Onboarding. Ein Begleiter spricht mit Ihnen und reagiert auf das, was Sie sagen. Sie können antworten, indem Sie Karten antippen, einen Regler bewegen, tippen oder einsprechen. Das Onboarding enthält:",
+    "projectF.demo1":
+      "eine gesprochene Vorstellung von VIVADI und wie die Zusammenarbeit aussieht,",
+    "projectF.demo2":
+      "Datenschutz und eine kurze Sicherheitsfrage,",
+    "projectF.demo3":
+      "die Entscheidung, ob und wie Informationen an Ihren Therapeuten weitergegeben werden,",
+    "projectF.demo4":
+      "eine kurze Einschätzung, aus der VIVADI Schwerpunkte ableitet (die Demo startet mit den Themen Stress und Schlaf, weitere folgen),",
+    "projectF.demo5":
+      "Auswahlkarten zu Ihren Belastungen, einen Regler für die aktuelle Anspannung sowie Zeit und Erinnerungen,",
+    "projectF.demo6":
+      "einen Überblick über den Tagesablauf und einen Ausblick auf die kommenden Wochen.",
+    "projectF.h4":
+      "Hinweis",
+    "projectF.p4":
+      "VIVADI ist ein Prototyp in Entwicklung und läuft mit einer erfundenen Testperson. Die Demo ist passwortgeschützt. VIVADI stellt keine Diagnosen und ersetzt keine ärztliche oder therapeutische Behandlung.",
+    "projectF.cta":
+      "Zur Demo",
     "project.factsTitle": "Auf einen Blick",
   },
   en: {
@@ -222,6 +256,40 @@ const translations = {
       "Advice: Prof. Ido Iurgel, Rhine-Waal University of Applied Sciences",
     "projectE.cta":
       "Read the article (Rheinische Post)",
+    "projectF.title":
+      "VIVADI – a digital companion for well-being",
+    "projectF.card":
+      "A digital companion for small everyday steps: a calm conversation and short exercises for your well-being. Prototype with demo.",
+    "projectF.summary":
+      "VIVADI is a digital companion for small everyday steps when it comes to mental health and personal well-being.",
+    "projectF.p1":
+      "It has a calm conversation with you, by voice or text, and suggests suitable short exercises. It does not make diagnoses and does not replace treatment; it supports you in everyday life. You decide at any time which information you share with your therapist.",
+    "projectF.h2":
+      "What it is about",
+    "projectF.p2":
+      "VIVADI accompanies people with short, practical exercises on many topics around personal well-being. Each day you take about five minutes: you say how you are doing, VIVADI suggests a suitable short exercise, and afterwards you look together at what it brought you. After a week there is a review. If you like, you send the summary to your therapist yourself.",
+    "projectF.h3":
+      "What you see in the demo",
+    "projectF.p3":
+      "The current demo shows the start with VIVADI, the onboarding. A companion talks to you and responds to what you say. You can answer by tapping cards, moving a slider, typing or speaking. The onboarding contains:",
+    "projectF.demo1":
+      "a spoken introduction to VIVADI and what working together looks like,",
+    "projectF.demo2":
+      "data protection and a short safety question,",
+    "projectF.demo3":
+      "the decision whether and how information is passed on to your therapist,",
+    "projectF.demo4":
+      "a short assessment from which VIVADI derives focus areas (the demo starts with the topics stress and sleep, more will follow),",
+    "projectF.demo5":
+      "selection cards on your burdens, a slider for your current tension, as well as time and reminders,",
+    "projectF.demo6":
+      "an overview of the daily routine and an outlook on the coming weeks.",
+    "projectF.h4":
+      "Note",
+    "projectF.p4":
+      "VIVADI is a prototype under development and runs with a fictional test person. The demo is password-protected. VIVADI does not make diagnoses and does not replace medical or therapeutic treatment.",
+    "projectF.cta":
+      "Open the demo",
     "project.factsTitle": "At a glance",
   },
 };

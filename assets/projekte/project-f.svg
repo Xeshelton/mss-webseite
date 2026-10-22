@@ -1,0 +1,48 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#ececec"/>
+
+  <!-- Smartphone -->
+  <rect x="138" y="44" width="124" height="212" rx="20" fill="#ffffff" stroke="#262626" stroke-width="4"/>
+  <line x1="174" y1="58" x2="226" y2="58" stroke="#e0e0e0" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Begleiter spricht -->
+  <circle cx="160" cy="90" r="11" fill="none" stroke="#262626" stroke-width="3"/>
+  <circle cx="156" cy="88" r="1.6" fill="#262626"/>
+  <circle cx="164" cy="88" r="1.6" fill="#262626"/>
+  <path d="M155 94q5 4 10 0" fill="none" stroke="#262626" stroke-width="2" stroke-linecap="round"/>
+  <rect x="178" y="76" width="72" height="28" rx="10" fill="#ececec"/>
+  <rect x="187" y="84" width="42" height="5" rx="2.5" fill="#cfcfcf"/>
+  <rect x="187" y="93" width="28" height="5" rx="2.5" fill="#cfcfcf"/>
+
+  <!-- Auswahlkarten -->
+  <rect x="154" y="120" width="44" height="36" rx="8" fill="none" stroke="#262626" stroke-width="3"/>
+  <rect x="204" y="120" width="44" height="36" rx="8" fill="none" stroke="#f37021" stroke-width="3"/>
+  <path d="M217 138l5 5 9-10" fill="none" stroke="#f37021" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="164" y="134" width="24" height="5" rx="2.5" fill="#e0e0e0"/>
+  <rect x="168" y="143" width="16" height="5" rx="2.5" fill="#e0e0e0"/>
+
+  <!-- Regler -->
+  <line x1="156" y1="182" x2="244" y2="182" stroke="#e0e0e0" stroke-width="6" stroke-linecap="round"/>
+  <line x1="156" y1="182" x2="206" y2="182" stroke="#f37021" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="206" cy="182" r="9" fill="#ffffff" stroke="#f37021" stroke-width="4"/>
+
+  <!-- Button -->
+  <rect x="156" y="210" width="88" height="28" rx="14" fill="#f37021"/>
+  <rect x="186" y="221" width="28" height="5" rx="2.5" fill="#ffffff"/>
+
+  <!-- Schlaf: Mond -->
+  <path d="M96 84a30 30 0 1 0 0 56a24 24 0 1 1 0-56z" fill="none" stroke="#262626" stroke-width="4" stroke-linejoin="round"/>
+  <g fill="#f37021">
+    <circle cx="64" cy="76" r="3"/>
+    <circle cx="106" cy="68" r="2"/>
+  </g>
+
+  <!-- Wohlbefinden: Herz -->
+  <path d="M322 196c-30-20-34-44-20-54 9-6 18-2 20 6 2-8 11-12 20-6 14 10 10 34-20 54z" fill="none" stroke="#f37021" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- Sprechwellen -->
+  <g fill="none" stroke="#f37021" stroke-width="3" stroke-linecap="round" opacity="0.6">
+    <path d="M276 100q8 10 0 20"/>
+    <path d="M286 92q14 18 0 36"/>
+  </g>
+</svg>
